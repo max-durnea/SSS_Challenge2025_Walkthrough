@@ -24,7 +24,7 @@ For **FLAG2**, I exploited a **command injection** vulnerability on the server. 
 - The ; operator allowed me to escape the ping command and execute arbitrary commands, in this case, reading the flag from the file /home/ctf/flag.
 
 ## FLAG3: Cookie Modification (Burp Suite)
-**SSS{hansel_gretel}**\
+**SSS{hansel_gretel}**
 - Intercepted the GET request in Burp Suite
 - I set the FLAG cookie to applepie 
 - Sent the request and got the flag from the response header 

@@ -41,6 +41,6 @@ Upon noticing that FFF should be SSS (a Caesar cipher shift of 13), I decrypted 
 
 ## FLAG5: Base64 Decoding
 **SSS{cage_travolta}**\
-For FLAG5, I inspected the source files of the site and found a Base64 encoded string within a comment. I decoded it with the following command:
+For FLAG5, I inspected the source files of the site and found a Base64 encoded string within a comment. I decoded it with the following command:\
 **echo "U1NTe2NhZ2VfdHJhdm9sdGF9Cg==" | base64 --decode**
 This gave me the final flag.

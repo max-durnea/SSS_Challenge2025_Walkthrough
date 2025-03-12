@@ -3,7 +3,7 @@
 This document explains the steps and methods used to capture each flag in the CTF challenge.
 
 ## FLAG1: SQL Injection (Login Form)
-# SSS{yummy_and_nutritious}
+**SSS{yummy_and_nutritious}**
 To capture **FLAG1**, I used an **SQL Injection** on the login form. Here’s how I did it:
 
 - **Username**: `admin'--`
@@ -16,7 +16,7 @@ curl -X POST -d "username=admin'--&password=''" http://141.85.224.116:8083/login
 This allowed me to bypass the login form and retrieve the flag.
 
 ## FLAG2: Command Injection (Ping Command)
-# SSS{hey_man_stop_pinging_around}
+**SSS{hey_man_stop_pinging_around}**
 For **FLAG2**, I exploited a **command injection** vulnerability on the server. I used the following input:
 
 141.85.224.116 -c 1; cat /home/ctf/flag
@@ -24,13 +24,13 @@ For **FLAG2**, I exploited a **command injection** vulnerability on the server. 
 - The ; operator allowed me to escape the ping command and execute arbitrary commands, in this case, reading the flag from the file /home/ctf/flag.
 
 ## FLAG3: Cookie Modification (Burp Suite)
-# SSS{hansel_gretel}
+**SSS{hansel_gretel}**
 - Intercepted the GET request in Burp Suite
 - I set the FLAG cookie to applepie 
 - Sent the request and got the flag from the response header 
 
 ## FLAG4: Caesar Cipher Decryption
-# SSS{every_file_has_feelings}
+**SSS{every_file_has_feelings}**
 For FLAG4, I discovered the flag in the source code of the site. The following parts were found:
 - First Part: FFF{rirel_
 - Second Part: svyr_

@@ -3,7 +3,7 @@
 This document explains the steps and methods used to capture each flag in the CTF challenge.
 
 ## FLAG1: SQL Injection (Login Form)
-**SSS{yummy_and_nutritious}**
+**SSS{yummy_and_nutritious}**\
 To capture **FLAG1**, I used an **SQL Injection** on the login form. Here’s how I did it:
 
 - **Username**: `admin'--`

